@@ -2,7 +2,8 @@ const { Router } = require('express');
 
 const routes = Router();
 
-routes.post('/users', (req, res) => {
+routes.post('/devs', (req, res) => {
+    const { github_username } = req.body;
     return res.json({ message: 'Server teste' });
 });
 
