@@ -9,7 +9,7 @@ mongoose.connect('mongodb+srv://tp_nosqlatlas:RI3OIMh7hAtZSaBq@cluster0-2hk2x.mo
     useUnifiedTopology: true,
 })
 
-app.use(express.json);
+app.use(express.json());
 app.use(routes);
 
 app.listen(3333);
